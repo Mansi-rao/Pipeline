@@ -4,7 +4,7 @@ pipeline {
     stage('Compile') {
       steps {
         withMaven(jdk: 'jdk11', maven: 'maven3') {
-          sh 'sh \'mvn compile\''
+          sh 'mvn compile'
         }
 
       }
